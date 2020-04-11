@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contact us/rail mantra</title>
+    <link rel="stylesheet" href="style4.css">
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+<style>
+body
+{
+background-image:url("asif.png");
+}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="left">
+                <ul>               
+                <li class="item"><a href="main2.html">Home</a></li>
+                <li class="item"><a href="about.html">About us</a></li>
+                <li class="item"><a href="contact.html"><u>Contact Us</u></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="item"><a href="index2.html">Login</a></li>
+                </ul>
+                <a href="index.html"><img src="import.png" class="loginicon"></a>
+            </div>
+        </div>
+        <p id="one">design by akshay</p>
+    <div class="container">
+        <div class="header">
+            <h1>Contact Us</h1>
+            <p>If You Have Any Query, Please Contact Us</p>
+            <p>NAME-</p>
+            <input type="text" name="" placeholder="Enter Name-" id="name">
+            <p>E-Mail-</p>
+            <input type="text" name="" placeholder="Enter E-Mail-" id="email">
+            <p>Message</p>
+            <input type="text" name="" placeholder="Message in short" id="message">
+            <button type="button" onclick="e();" id="submit1"  class="submit" >--------Contact Us-------</button><br>
+        </div>
+    </div>
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+        function e(){
+            var name = '';
+            var email = '';
+            var message = '';
+
+            var Name = document.getElementById('name').value;
+            var Email = document.getElementById('email').value;
+            var Message = document.getElementById('message').value;
+
+            if((name == Name)&&(email == Email)(message == Message)){
+                Swal.fire('Opps...', 'some field is empty', 'error')
+            }
+            else{
+                Swal.fire('success', 'successfully message sent', 'success')
+            }   
+             
+        }
+            
+     
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("test6.jpg")fixed no-repeat;
+    background-size: cover;
+    background-position: unset;
+    justify-content: center;
+}
+.nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(3, 14, 6);
+  justify-content: center;
+  }
+  .left{
+    float: left;
+} 
+.left ul{
+    list-style: none;
+    padding: 0em 3em;
+} 
+.left ul li{
+    display: inline-block;
+} 
+.left ul li a{
+    text-decoration: none;
+    color: #c6dbd3;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 8px 16px;
+}
+
+.left ul li a:hover{
+    border-bottom: 2px solid rgb(6, 143, 47);
+    color:rgb(24, 240, 132); 
+
+}
+.right{
+    float: right;
+}
+.right ul{
+    list-style: none;
+    padding: 0em 3em;
+} 
+.right ul li{
+    display: inline-block;
+} 
+.right ul li a{
+    text-decoration: none;
+    color: #c6dbd3;;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 9px 16px;
+
+}
+.right ul li a:hover{
+    border-bottom: 2px solid rgb(6, 143, 47);
+    color:rgb(24, 240, 132);
+
+}
+#one{
+    transform: translate(50%,250%);
+}
+.loginbox{
+    width: 400px;
+    height: 510px;
+    background: #866d6d;
+    color: #220909ec;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-175%,-50%);
+    box-sizing: border-box;
+    padding: 70px;
+    border-radius: 5%;
+    opacity: 0.8;
+    justify-content: center;
+}
+.loginbox .login{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    position: absolute;
+    top: -57px;
+    left: 130px;
+}
+.loginbox h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.loginbox input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #4b1d1d;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #200101;
+    font-size: 16px;
+    font-family: monospace;
+    font-style: oblique;
+    
+}
+.submit{
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 40px;
+    background: #6d0505;
+    color: #b69f9f;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.submit:hover{
+    
+   background-color: #9c0a0a;
+   cursor: pointer;
+}
+.loginbox a{
+    color: #310d0d;
+ }
+ .loginicon{
+     display: none;
+ }
+/*responsive code*/
+@media only screen and (max-width: 1401px){
+   .loginbox{
+       width: 400px;
+       padding: 2%;
+       transform: translate(-138%,-50%);
+   }
+}
+@media only screen and (max-width: 1160px){
+    .loginbox{
+        width: 330px;
+        padding: 2%;
+        transform: translate(-129%,-50%);
+    }
+ }
+@media only screen and (max-width: 870px){
+    .loginbox{
+        width: 294px;
+        height: 400px;
+        transform: translate(-77%,-54%);
+    }
+    .loginbox .login{
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    position: absolute;
+    top: -42px;
+    left: 112px;
+    }
+ }
+@media only screen and (max-width: 610px){
+    .loginbox{
+        width: 280px;
+        height: 400px;
+        transform: translate(-55%,-35%);
+    }
+    .loginbox .login{
+        width: 60px;
+        height: 60px;
+        border-radius: 20%;
+        position: absolute;
+        top: -38px;
+        left: 106px;
+        }
+        .left ul li a{
+            padding-left: 0px;
+        }
+        .right ul li a{
+            display: none;
+        }
+        .loginicon{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #c6dbd3;
+            transform: translate(55%,-107%);
+
+        }
+ }
+ @media only screen and (max-width: 480px){
+    .loginicon{
+        width: 35px;
+        height: 35px;
+        background-color: #c6dbd3;
+        padding-right: 0px;
+        transform: translate(95%,-278%);
+    }
+   }
+   @media only screen and (max-width: 380px){
+    .loginbox{
+        width: 280px;
+        height: 400px;
+        transform: translate(-50%,-35%);
+    }
+    .left ul{
+       padding: 0px 0px;
+   }
+   .left ul li a{
+       font-size: 1rem;
+   }
+   .loginicon{
+       width: 35px;
+       height: 35px;
+       background-color: #c6dbd3;
+       padding-right: 0px;
+       transform: translate(95%,-124%);
+   }
+   
+   }
+   @media only screen and (max-width: 330px){
+       
+    .loginicon{
+           width: 35px;
+           height: 35px;
+           background-color: #c6dbd3;
+           padding-right: 0px;
+           transform: translate(144%,-264%);
+       }   
+   }

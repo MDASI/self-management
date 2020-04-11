@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>railway manegement system</title>
+    <link rel="stylesheet" href="style3.css">
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+<style>
+body
+{
+background-image:url("asif.4.jpeg");
+}
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <ul>               
+            <li class="item"><a href="main2.html">Home</a></li>
+            <li class="item"><a href="NEXTPAGE2new.html">all booking</a></li>
+            <li class="item"><a href="about.html">About us</a></li>
+            <li class="item"><a href="contact.html">Contact us</a></li>
+            </ul>
+            
+        </div>
+        <div class="right">
+            <ul>
+                <li class="item"><a href="index2.html"><u>Login</u></a></li>
+            </ul>
+            <a href="index.html"><img src="import.png" class="loginicon"></a>
+        </div>
+    </div>
+    <p id="one">design by team</p>
+    <div class="loginbox">
+        <img src="test7.png" alt="log in logo" class="login">
+           <span class="heading"><h1><u>Login Here</u></h1></span></span>    
+          <form id="login">
+              <p>USERNAME:-</p>
+              <input type="text" name="" placeholder="Enter username" id="username">
+              <p>PASSWORD:-</p>
+              <input type="password" name="" placeholder="Enter password" id="passward">
+                <button type="button" id="submit1" onclick="e();" class="submit" >log in</button><br>
+              <a href="a">Lost Passward?</a><br>
+              <a href="a">Create new acctount</a>
+          </form>
+        <div class="box">
+
+     </div>
+    </div>
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+        function e(){
+            var username = 'akshay';
+            var passward = 'sam';
+
+            var userName = document.getElementById('username').value;
+            var passWard = document.getElementById('passward').value;
+
+            if((username == userName)&&(passward == passWard)){
+            Swal.fire('success', 'successfully Login', 'success')
+            }
+            else{
+                Swal.fire('Opps...', 'Some error in username and password', 'error')
+            }
+        }
+    </script>
+</body>
+</html>

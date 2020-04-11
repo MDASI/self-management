@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function set()
+{
+var x=document.getElementsByName("asif");
+x=2;
+if(x>0)
+{
+document.write("avalable");
+document.write("<br>");
+document.write("price=700");
+document.write("<br>");
+document.write("<a href='nextpage4.html' target=_blank id ='link'>CONFIRM</a>.");
+document.write("<br>");
+document.write("<a href='nextpage3new.html' target=_blank id ='link'>BACK PAGE</a>.");
+x--;
+}
+else
+{
+document.write("not avalable");
+document.write("<br>");
+document.write("<a href='nextpage3.html' target=_blank id ='link'>back page</a>.");
+}
+}
+</script>
+<style>
+#khan
+{
+color:blue;
+font-size:40px;
+}
+body
+{
+align:center;
+padding-top:20px;
+padding-bottom:30px;
+padding-right:400px;
+padding-left:500px;
+}
+form
+{
+margin:40px;
+max-width:1000px;
+padding:50px;
+background-color:pink;
+font-size:30px;
+}
+body
+{
+background-image:url(k.jpg);
+}
+#d
+{
+color:red;
+padding-top:10px;
+padding-bottom:10px;
+color:red;
+}
+#g
+{
+padding-bottom:30px;
+padding-top:20px;
+padding-right:40px;
+padding-left:30px;
+color:blue bold;
+font-size:40px;
+}
+</style>
+</head>
+<body>
+<marquee id="khan" behavior="scroll" direction="left">BOOK YOUR TICKET</marquee>
+<form action="nextpage4.html" method="post">
+<table>
+<tr>
+<td Id="g">NAME OF THE TRAINS</td>
+</tr>
+<tr>
+<td id="d" name="asif" >KOLKATA EXPRESS</td>
+</tr>
+<tr>
+<td onclick="set()"><input type="radio" name="asif" />1A<input type="radio" name="asif" />2A<input type="radio" name="asif" />3A
+<input type="radio" name="asif" />SL</td>
+</tr>
+<tr>
+<td id="d">RAJDHANI EXPRESS</td>
+</tr>
+<tr>
+<td onclick="set()"><input type="radio" name="asif" />1A<input type="radio" name="asif" />2A<input type="radio" name="asif" />3A
+<input type="radio" name="asif" />SL</td>
+</tr>
+<tr>
+<td id="d" name="asif">JANSATABADI EXPRESS</td>
+</tr>
+<tr>
+<td onclick="set()"><input type="radio" name="asif" />1A<input type="radio" name="asif" />2A<input type="radio" name="asif" />3A
+<input type="radio" name="asif" />SL</td>
+</tr>
+<td id="d" name="asif">PURSOTUM EXPRESS</td>
+</tr>
+<tr>
+<td onclick="set()"><input type="radio" name="asif" />1A<input type="radio" name="asif" />2A<input type="radio" name="asif" />3A
+<input type="radio" name="asif" />SL</td>
+</tr>
+<td id="d" name="asif">GANGA EXPRESS</td>
+</tr>
+<tr>
+<td onclick="set()"><input type="radio" name="asif" />1A<input type="radio" name="asif" />2A<input type="radio" name="asif" />3A
+<input type="radio" name="asif" />SL</td>
+</tr>
+<td id="d" name="asif">HIMGIRI EXPRESS</td>
+</tr>
+<tr>
+<td onclick="set()"><input type="radio" name="asif" />1A<input type="radio" name="asif" />2A<input type="radio" name="asif" />3A
+<input type="radio" name="asif" />SL</td>
+</tr>
+<td id="d" name="asif">GARIBRATH EXPRESS</td>
+</tr>
+<tr>
+<td onclick="set()"><input type="radio" name="asif" />1A<input type="radio" name="asif" />2A<input type="radio" name="asif" />3A
+<input type="radio" name="asif" />SL</td>
+</tr>
+<tr>
+<td id="d" ><input  type="submit" value="next step" name="arbaz"/<td>
+</tr>
+</table>
+</form>
+</body>
